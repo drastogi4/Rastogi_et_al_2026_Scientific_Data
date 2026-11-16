@@ -16,10 +16,10 @@ The scripts are organized by workflow stage. They process external input dataset
 
 | Script | Purpose |
 |---|---|
-| `scripts/ar_identification/identify_ar_te.csh` | Identify ARs with TE and remove AR detections within 8° of TE hurricane tracks. |
-| `scripts/etc_identification/identify_etc_te.csh` | Identify and stitch ETC tracks with TE. |
-| `scripts/hurricane_identification/identify_hurricane_te.csh` | Identify hurricanes with TE; writes CSV and GFDL-format tracks. |
-| `scripts/mcs_identification/identify_mcs_te.csh` | Identify MCSs with TE using OLR, cold-core, precipitation, area, and lifetime criteria. |
+| `identify_AR_TE.csh` | Identify ARs with TE and remove AR detections within 8° of TE hurricane tracks. |
+| `identify_ERC_TE.csh` | Identify and stitch ETC tracks with TE. |
+| `identify_HURRICANE_TE.csh` | Identify hurricanes with TE; writes CSV and GFDL-format tracks. |
+| `identify_MCS_TE.csh` | Identify MCSs with TE using OLR, cold-core, precipitation, area, and lifetime criteria. |
 
 TRACK and WNet storm-identification scripts will be added separately. The TE shell scripts use C-shell syntax and have the `.csh` extension.
 
@@ -83,10 +83,10 @@ The classification scripts require NCL and its standard contributed script libra
 From the repository root, submit the relevant C-shell script to Slurm after checking its input paths and resource settings:
 
 ```bash
-sbatch scripts/ar_identification/identify_ar_te.csh
-sbatch scripts/etc_identification/identify_etc_te.csh
-sbatch scripts/hurricane_identification/identify_hurricane_te.csh
-sbatch scripts/mcs_identification/identify_mcs_te.csh
+sbatch identify_AR_TE.csh
+sbatch identify_ETC_TE.csh
+sbatch identify_HURRICANE_TE.csh
+sbatch identify_MCS_TE.csh
 ```
 
 The scripts currently default to these year ranges:
