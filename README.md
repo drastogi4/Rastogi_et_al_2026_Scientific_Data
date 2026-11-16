@@ -1,6 +1,6 @@
 # Rastogi_et_al_2026_Scientific_Data
 
-# Storm-Type Identification and Precipitation Attribution
+# Storm-Type Identification and Precipitation Classification
 
 This repository contains scripts used to identify storm types in ERA5, attribute precipitation to storm classes, and calculate storm-type likelihoods for the associated manuscript. It supports three analysis configurations:
 
