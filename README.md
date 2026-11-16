@@ -93,7 +93,7 @@ The scripts currently default to these year ranges:
 
 - AR: 1980–2024
 - ETC: 1980–2024
-- Hurricane: 1980–2004 (change `start_year` and `end_year` in the script for the full analysis period, if intended)
+- Hurricane: 1980–2004 
 - MCS: 1980–2024
 
 Check each script's header and configuration section for input filenames, output names, thresholds, and cluster settings. Run a short test year first, then verify the generated files before submitting the full period.
